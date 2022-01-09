@@ -10,5 +10,5 @@ torchvision0.9.0 <br>
 #### Training and pruning VGG16
     python main_vgg.py --arch VGG --save checkpoint/VGG 
 ## References
-Our work is based on: Pruning Filter in Filter (https://arxiv.org/abs/2009.14410) <br>
+Our work is based on : Pruning Filter in Filter (https://arxiv.org/abs/2009.14410) <br>
 Our code is alse based on https://github.com/fxmeng/Pruning-Filter-in-Filter <br>
