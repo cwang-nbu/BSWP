@@ -1,6 +1,8 @@
 # BALANCED STRIPE-WISE PRUNING IN THE FILTER (BSWP)
 ![image](https://github.com/ajdt1111/BSWP/blob/main/framework.png)
-#### Requirements
+## Introduction
+    This work has been submitted to ICASSP 2022
+## Requirements
 python3.6 <br>
 pytorch1.8.0 <br>
 torchvision0.9.0 <br>
