@@ -9,7 +9,7 @@ torchvision0.9.0 <br>
 ## Getting Started
 #### Training and pruning ResNet56 with piecewise function
     python main_resnet.py --arch ResNet56 --save checkpoint/ResNet56 --use_function piecewise
-#### Training and pruning ResNet56 with piecewise function
+#### Training and pruning ResNet56 with other function
     python main_resnet.py --arch ResNet56 --save checkpoint/ResNet56 --use_function convex
 #### Training and pruning VGG16
     python main_vgg.py --arch VGG --save checkpoint/VGG --use_function piecewise
