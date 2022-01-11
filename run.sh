@@ -5,6 +5,6 @@ train(){
   --use_function piecewise
 }
 
-train();
+train;
 
 
