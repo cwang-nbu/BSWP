@@ -157,7 +157,7 @@ class tool():
                         dic_temp = {key: 0.045}
                         dic_threshold_new.update(dic_temp)
                     else:
-                        dic_temp = {key: 0.05}
+                        dic_temp = {key: 0.048}
                         dic_threshold_new.update(dic_temp)
         return dic_threshold_new
 
