@@ -159,8 +159,6 @@ class tool():
                     else:
                         dic_temp = {key: 0.05}
                         dic_threshold_new.update(dic_temp)
-                    print(self.use_function)
-                    print("aaa")
         return dic_threshold_new
 
     def jianzhilv(self, model, dic_threshold):
