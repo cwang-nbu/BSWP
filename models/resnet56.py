@@ -5,6 +5,7 @@ import torch.nn.init as init
 from .stripe import *
 
 __all__ = ['ResNet56']
+slope = 0.01
 
 
 class BasicBlock(nn.Module):
@@ -133,7 +134,7 @@ class tool():
                 rate_temp = m.cal_skeleton_show(dic_threshold[key])
                 rate_temp = rate_temp/9
                 if self.use_function == 'convex':
-                    value = threshold + 0.01 * rate_temp / (2 - rate_temp)
+                    value = threshold + slope  * rate_temp / (2 - rate_temp)
                     value = value.detach()
                     dic_temp = {key: value}
                     dic_threshold_new.update(dic_temp)
