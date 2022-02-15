@@ -13,6 +13,8 @@ torchvision0.9.0 <br>
     python main_resnet.py --arch ResNet56 --save checkpoint/ResNet56 --use_function convex
 #### Training and pruning VGG16
     python main_vgg.py --arch VGG --save checkpoint/VGG --use_function piecewise
+#### Training and pruning ResNet56 with other function
+    python main_vgg.py --arch VGG --save checkpoint/VGG --use_function convex
 ## References
 Our work is based on : Pruning Filter in Filter (https://arxiv.org/abs/2009.14410) <br>
-Our code is alse based on https://github.com/fxmeng/Pruning-Filter-in-Filter <br>
+Our code is alse based on : https://github.com/fxmeng/Pruning-Filter-in-Filter <br>
