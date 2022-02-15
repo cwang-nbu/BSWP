@@ -9,6 +9,7 @@ default_cfg = {
     'VGG16': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M', 512, 512, 512, 'M', 512, 512, 512, 'M'],
     'VGG19': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 256, 'M', 512, 512, 512, 512, 'M', 512, 512, 512, 512, 'M'],
 }
+slope = 0.006
 
 
 class VGG(nn.Module):
@@ -97,7 +98,7 @@ class tool():
                 rate_temp = m.cal_skeleton_show(dic_threshold[key])
                 rate_temp = rate_temp/9
                 if self.use_function == 'convex':
-                    value = threshold + 0.01 * rate_temp / (2 - rate_temp)
+                    value = threshold + slope * rate_temp / (2 - rate_temp)
                     value = value.detach()
                     dic_temp = {key: value}
                     dic_threshold_new.update(dic_temp)
